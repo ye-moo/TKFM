@@ -1,0 +1,398 @@
+{
+    "$__mpe_config_P1": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": -505,
+                "y": -118,
+                "zoom": 0.7
+            },
+            "filename": "P1",
+            "version": "v1.8.0"
+        }
+    },
+    "Dstep01": {
+        "next": [
+            "[JumpBack]internet",
+            "[JumpBack]day",
+            "Dstep02"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -53,
+                "y": 118
+            }
+        }
+    },
+    "Dstep02": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1,
+                    166,
+                    183,
+                    38
+                ],
+                "expected": [
+                    "活动开放中"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    33,
+                    169,
+                    128,
+                    32
+                ]
+            }
+        },
+        "next": [
+            "[JumpBack]internet",
+            "[JumpBack]day",
+            "Dstep03"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 279,
+                "y": 152
+            }
+        }
+    },
+    "Dstep03": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "template_1787378417095.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    273,
+                    667,
+                    176,
+                    76
+                ]
+            }
+        },
+        "repeat": 2,
+        "repeat_delay": 500,
+        "next": [
+            "[JumpBack]internet",
+            "[JumpBack]day",
+            "Dstep04"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 652,
+                "y": 175
+            }
+        }
+    },
+    "Dstep04": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    108,
+                    937,
+                    187,
+                    68
+                ],
+                "expected": [
+                    "密林追猎"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    150,
+                    912,
+                    366,
+                    89
+                ]
+            }
+        },
+        "next": [
+            "[JumpBack]internet",
+            "[JumpBack]day",
+            "Dstep05"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 972,
+                "y": 256
+            }
+        }
+    },
+    "Dstep05": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    494,
+                    1080,
+                    176,
+                    126
+                ],
+                "expected": [
+                    "军团扫荡"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    519,
+                    1128,
+                    107,
+                    36
+                ]
+            }
+        },
+        "next": [
+            "[JumpBack]internet",
+            "[JumpBack]day",
+            "Dstep06"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1277,
+                "y": 304
+            }
+        }
+    },
+    "Dstep06": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    409,
+                    700,
+                    167,
+                    45
+                ],
+                "expected": [
+                    "确定"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    428,
+                    703,
+                    133,
+                    40
+                ]
+            }
+        },
+        "next": [
+            "[JumpBack]internet",
+            "[JumpBack]day",
+            "Dstep-06",
+            "Dstep08"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1624,
+                "y": 266
+            }
+        }
+    },
+    "Dstep08": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    261,
+                    425,
+                    210,
+                    64
+                ],
+                "expected": [
+                    "自动扫荡设置"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    596,
+                    562,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "[JumpBack]internet",
+            "[JumpBack]day",
+            "Dstep09"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1947,
+                "y": 302
+            }
+        }
+    },
+    "Dstep09": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    437,
+                    793,
+                    106,
+                    32
+                ]
+            }
+        },
+        "next": [
+            "[JumpBack]internet",
+            "[JumpBack]day",
+            "Dstep10"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2252,
+                "y": 288
+            }
+        }
+    },
+    "Dstep10": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "返回地图"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    298,
+                    1187,
+                    133,
+                    33
+                ]
+            }
+        },
+        "repeat": 2,
+        "repeat_delay": 200,
+        "next": [
+            "[JumpBack]internet",
+            "[JumpBack]day",
+            "Dstep11"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2563,
+                "y": 134
+            }
+        }
+    },
+    "Dstep11": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    515,
+                    1126,
+                    111,
+                    40
+                ],
+                "expected": [
+                    "军团扫荡"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    156,
+                    69,
+                    21,
+                    16
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 3010,
+                "y": 454
+            }
+        }
+    },
+    "$__mpe_external_internet_P1": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1162,
+                "y": 1657
+            }
+        }
+    },
+    "$__mpe_external_day_P1": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1087,
+                "y": -491
+            }
+        }
+    },
+    "Dstep-06": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    405,
+                    370,
+                    173,
+                    36
+                ],
+                "expected": [
+                    "使用魔晶石回复"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    186,
+                    918,
+                    90,
+                    26
+                ]
+            }
+        },
+        "next": [
+            "internet",
+            "[JumpBack]day",
+            "Dstep11"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2110,
+                "y": 975
+            }
+        }
+    }
+}
