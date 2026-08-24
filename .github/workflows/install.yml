@@ -132,6 +132,7 @@ jobs:
           path: "install"
   changelog:
     name: Generate changelog
+    continue-on-error: true
     needs: meta
     runs-on: ubuntu-latest
     outputs:
