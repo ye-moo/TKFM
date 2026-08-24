@@ -1,0 +1,47 @@
+{
+    "task": [
+        {
+            "name": "进入游戏",
+            "entry": "Enter0",
+            "group": "daily"
+        },
+        {
+            "name": "领取每日体力",
+            "entry": "DailyStartE",
+            "group": [
+                "daily"
+            ]
+        },
+        {
+            "name": "刷活动本(45体力)+1次银币本",
+            "entry": "DailyStartA",
+            "group": [
+                "daily"
+            ]
+        },
+        {
+            "name": "每日派遣",
+            "entry": "DailyStartD",
+            "group": [
+                "daily"
+            ]
+        },
+        {
+            "name": "调教(按调教值倒序调教3次)",
+            "entry": "Discipline0",
+            "group": "daily"
+        },
+        {
+            "name": "强化角色2次(R N卡按等级倒序升两次)",
+            "entry": "Strengthen0",
+            "group": [
+                "daily"
+            ]
+        },
+        {
+            "name": "领每日奖励",
+            "entry": "Reward0",
+            "group": "daily"
+        }
+    ]
+}

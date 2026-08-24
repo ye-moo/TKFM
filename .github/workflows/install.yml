@@ -1,31 +1,30 @@
 name: install
-
+permissions:
+  contents: write
 env:
   # 版本控制：
   # - 设置 VERSION 为空字符串时，下载 latest 版本
   # - 设置 VERSION 为具体版本号时（如 v1.2.3），下载指定版本
   MAAFW_VERSION: ""
   MFAA_VERSION: ""
-
 on:
   push:
     tags:
       - "v*"
     branches:
       - "**"
-    paths:
-      - ".github/workflows/install.yml"
-      - "assets/**"
-      - "**.py"
+#    paths:
+#      - ".github/workflows/install.yml"
+#      - "assets/**"
+#      - "**.py"
   pull_request:
     branches:
       - "**"
-    paths:
-      - ".github/workflows/install.yml"
-      - "assets/**"
-      - "**.py"
+#    paths:
+#      - ".github/workflows/install.yml"
+#      - "assets/**"
+#      - "**.py"
   workflow_dispatch:
-
 jobs:
   meta:
     runs-on: ubuntu-latest
@@ -45,20 +44,17 @@ jobs:
             fi
             tag=$(date "+$tag-%y%m%d-$(git rev-parse --short HEAD)")
           fi
-
           if ! $($is_release) ; then
             prefix=${tag%-*-*}
             suffix=${tag#$prefix-}
             tag="$prefix-ci.$suffix"
           fi
-
           # 检查是否为预发布版本
           is_prerelease=false
           if [[ $tag =~ .*alpha.* || $tag =~ .*beta.* || $tag =~ .*rc.* || $tag =~ .*dev.* || $tag =~ .*-ci.* ]]; then
             is_prerelease=true
             echo "This is a pre-release version"
           fi
-
           echo tag=$tag | tee -a $GITHUB_OUTPUT
           echo is_release=$is_release | tee -a $GITHUB_OUTPUT
           echo is_prerelease=$is_prerelease | tee -a $GITHUB_OUTPUT
@@ -66,7 +62,6 @@ jobs:
       tag: ${{ steps.set_tag.outputs.tag }}
       is_release: ${{ steps.set_tag.outputs.is_release }}
       is_prerelease: ${{ steps.set_tag.outputs.is_prerelease }}
-
   install:
     needs: meta
     runs-on: ubuntu-latest
@@ -75,12 +70,10 @@ jobs:
         os: [win, macos, linux, android]
         arch: [aarch64, x86_64]
       fail-fast: false
-
     steps:
       - uses: actions/checkout@v4
         with:
           submodules: true
-
       - name: Download MaaFramework
         uses: robinraju/release-downloader@v1
         with:
@@ -90,7 +83,6 @@ jobs:
           tag: ${{ env.MAAFW_VERSION }}
           out-file-path: "deps"
           extract: true
-
       - name: Download MFAAvalonia
         if: matrix.os != 'android'
         id: download_mfa
@@ -102,7 +94,6 @@ jobs:
           tag: ${{ env.MFAA_VERSION }}
           out-file-path: "MFA"
           extract: true
-
       - name: Clean up MFAAvalonia archive
         if: matrix.os != 'android'
         shell: bash
@@ -110,7 +101,6 @@ jobs:
           ARCHIVE_FILE_PATH="${{ fromJson(steps.download_mfa.outputs.downloaded_files)[0] }}"
           rm -f "${ARCHIVE_FILE_PATH}"
           echo "Archive cleanup command executed for MFAAvalonia."
-
       - name: Remove built-in runtime in MFA
         if: matrix.os != 'android'
         shell: bash
@@ -132,17 +122,14 @@ jobs:
           else
             echo "Skipping copy MFA for Android."
           fi
-
           cd tools/
           python -m pip install -r ./requirements.txt
           python ./install.py ${{ needs.meta.outputs.tag }} ${{ matrix.os }} ${{ matrix.arch }}
           cd ..
-
       - uses: actions/upload-artifact@v4
         with:
           name: MAATKFM-${{ matrix.os }}-${{ matrix.arch }}
           path: "install"
-
   changelog:
     name: Generate changelog
     needs: meta
@@ -154,7 +141,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-
       - name: Generate a changelog
         uses: orhun/git-cliff-action@v4
         id: git-cliff
@@ -168,7 +154,6 @@ jobs:
         env:
           OUTPUT: CHANGES.md
           GITHUB_REPO: ${{ github.repository }}
-
   release:
     if: ${{ needs.meta.outputs.is_release == 'true' }}
     needs: [meta, install, changelog]
@@ -177,7 +162,6 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           path: assets
-
       - run: |
           cd assets
           for f in *; do
@@ -191,7 +175,6 @@ jobs:
           body: ${{ needs.changelog.outputs.release_body }}
           draft: false
           prerelease: ${{ needs.meta.outputs.is_prerelease == 'true' }}
-
         # Mirror酱为第三方分发服务，新项目默认关闭
         # 若有需要请联系 Mirror酱 开通，直接自行开启是无法使用的
         # https://mirrorchyan.com/

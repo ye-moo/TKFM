@@ -1,0 +1,166 @@
+{
+    "$__mpe_config_P1": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": 349,
+                "y": 0,
+                "zoom": 0.53
+            },
+            "filename": "P1",
+            "version": "v1.8.0"
+        }
+    },
+    "ENAP-1": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    31,
+                    73,
+                    123,
+                    53
+                ]
+            }
+        },
+        "post_wait_freezes": {
+            "time": 500,
+            "target": [
+                232,
+                1112,
+                275,
+                158
+            ]
+        },
+        "next": [
+            "E2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 332,
+                "y": 44
+            }
+        }
+    },
+    "E2": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    308,
+                    207,
+                    107,
+                    27
+                ]
+            }
+        },
+        "post_wait_freezes": {
+            "time": 500,
+            "target": [
+                230,
+                1151,
+                260,
+                129
+            ]
+        },
+        "next": [
+            "E3"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 652,
+                "y": 44
+            }
+        }
+    },
+    "E3": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    133,
+                    1074,
+                    111,
+                    45
+                ],
+                "expected": [
+                    "体力获取"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    426,
+                    1079,
+                    137,
+                    33
+                ]
+            }
+        },
+        "post_wait_freezes": {
+            "time": 500,
+            "target": [
+                225,
+                1104,
+                276,
+                170
+            ]
+        },
+        "next": [
+            "E4"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 972,
+                "y": 12
+            }
+        }
+    },
+    "E4": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    348,
+                    1211,
+                    24,
+                    21
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1292,
+                "y": 91
+            }
+        }
+    },
+    "DailyStartE": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    38,
+                    169,
+                    116,
+                    33
+                ],
+                "expected": [
+                    "活动开放中"
+                ]
+            }
+        },
+        "next": [
+            "ENAP-1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 12,
+                "y": 57
+            }
+        }
+    }
+}

@@ -1,0 +1,279 @@
+{
+    "$__mpe_config_Enter": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": 137,
+                "y": 89,
+                "zoom": 0.49
+            },
+            "filename": "Enter",
+            "version": "v1.8.1"
+        }
+    },
+    "Enter1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    132,
+                    920,
+                    463,
+                    218
+                ],
+                "expected": [
+                    "TenkafuMA"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    215,
+                    1106,
+                    298,
+                    162
+                ]
+            }
+        },
+        "post_wait_freezes": {
+            "time": 500,
+            "target": [
+                273,
+                1085,
+                187,
+                177
+            ]
+        },
+        "next": [
+            "EnterX"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 172,
+                "y": 271
+            }
+        }
+    },
+    "Enter0": {
+        "next": [
+            "[JumpBack]Enter_1",
+            "Enter1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -215,
+                "y": 203
+            }
+        }
+    },
+    "Enter_1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    273,
+                    171,
+                    171,
+                    44
+                ],
+                "expected": [
+                    "王城公布栏"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    348,
+                    1144,
+                    24,
+                    23
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 222,
+                "y": -6
+            }
+        }
+    },
+    "Enter2-3": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    335,
+                    118,
+                    52,
+                    33
+                ],
+                "expected": [
+                    "精选"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    19,
+                    62,
+                    70,
+                    24
+                ]
+            }
+        },
+        "rate_limit": 2000,
+        "next": [
+            "EnterX"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 269,
+                "y": 650
+            }
+        }
+    },
+    "Enter2-1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    293,
+                    595,
+                    318,
+                    76
+                ],
+                "expected": [
+                    "奖励已送至仓库"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    245,
+                    1186,
+                    245,
+                    42
+                ]
+            }
+        },
+        "rate_limit": 2000,
+        "next": [
+            "EnterX"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 615,
+                "y": -69
+            }
+        }
+    },
+    "Enter2-2": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    274,
+                    125,
+                    171,
+                    40
+                ],
+                "expected": [
+                    "王城公布栏"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    344,
+                    1189,
+                    29,
+                    26
+                ]
+            }
+        },
+        "rate_limit": 2000,
+        "next": [
+            "EnterX"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 570,
+                "y": 717
+            }
+        }
+    },
+    "EnterX": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    4,
+                    169,
+                    152,
+                    34
+                ],
+                "expected": [
+                    "活动开放中"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    242,
+                    47,
+                    64,
+                    24
+                ]
+            }
+        },
+        "post_delay": 8000,
+        "rate_limit": 2000,
+        "next": [
+            "Enter2-1",
+            "Enter2-2",
+            "Enter2-3",
+            "Enterover"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 521,
+                "y": 332
+            }
+        }
+    },
+    "Enterover": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    37,
+                    171,
+                    113,
+                    29
+                ],
+                "expected": [
+                    "活动开放中"
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 864,
+                "y": 331
+            }
+        }
+    }
+}

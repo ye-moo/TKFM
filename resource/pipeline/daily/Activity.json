@@ -1,0 +1,652 @@
+{
+    "$__mpe_config_P1": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": 349,
+                "y": 0,
+                "zoom": 0.53
+            },
+            "filename": "P1",
+            "version": "v1.8.0"
+        }
+    },
+    "DailyStartA": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    39,
+                    171,
+                    112,
+                    30
+                ],
+                "expected": [
+                    "活动开放中"
+                ]
+            }
+        },
+        "next": [
+            "Activity1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 12,
+                "y": 1382
+            }
+        }
+    },
+    "Activity1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    36,
+                    168,
+                    132,
+                    36
+                ],
+                "expected": [
+                    "活动开放中"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    33,
+                    169,
+                    128,
+                    32
+                ]
+            }
+        },
+        "next": [
+            "Ay2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 332,
+                "y": 1367
+            }
+        }
+    },
+    "Ay2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "template_1787378417095.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    273,
+                    667,
+                    176,
+                    76
+                ]
+            }
+        },
+        "repeat": 2,
+        "repeat_delay": 500,
+        "next": [
+            "Ay4"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 652,
+                "y": 1316
+            }
+        }
+    },
+    "Ay4": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    108,
+                    937,
+                    187,
+                    68
+                ],
+                "expected": [
+                    "密林追猎"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    150,
+                    912,
+                    366,
+                    89
+                ]
+            }
+        },
+        "next": [
+            "Ay5"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 972,
+                "y": 1367
+            }
+        }
+    },
+    "Ay5": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    494,
+                    1080,
+                    176,
+                    126
+                ],
+                "expected": [
+                    "军团扫荡"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    519,
+                    1128,
+                    107,
+                    36
+                ]
+            }
+        },
+        "next": [
+            "Ay6"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1292,
+                "y": 1367
+            }
+        }
+    },
+    "Ay6": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    409,
+                    700,
+                    167,
+                    45
+                ],
+                "expected": [
+                    "确定"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    428,
+                    703,
+                    133,
+                    40
+                ]
+            }
+        },
+        "next": [
+            "Ay_7",
+            "Ay7"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1612,
+                "y": 1367
+            }
+        }
+    },
+    "Ay7": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    261,
+                    425,
+                    210,
+                    64
+                ],
+                "expected": [
+                    "自动扫荡设置"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    596,
+                    562,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "Ay8"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1932,
+                "y": 1406
+            }
+        }
+    },
+    "Ay8": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    437,
+                    793,
+                    106,
+                    32
+                ]
+            }
+        },
+        "next": [
+            "Ay9"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2252,
+                "y": 1438
+            }
+        }
+    },
+    "Ay9": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "返回地图"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    298,
+                    1187,
+                    133,
+                    33
+                ]
+            }
+        },
+        "repeat": 2,
+        "repeat_delay": 200,
+        "next": [
+            "Ay10"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2572,
+                "y": 1376
+            }
+        }
+    },
+    "Ay10": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    515,
+                    1126,
+                    111,
+                    40
+                ],
+                "expected": [
+                    "军团扫荡"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    156,
+                    69,
+                    21,
+                    16
+                ]
+            }
+        },
+        "next": [
+            "Yinbi0"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2892,
+                "y": 1389
+            }
+        }
+    },
+    "Ay_7": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    405,
+                    370,
+                    173,
+                    36
+                ],
+                "expected": [
+                    "使用魔晶石回复"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    186,
+                    918,
+                    90,
+                    26
+                ]
+            }
+        },
+        "next": [
+            "Ay10"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2252,
+                "y": 1122
+            }
+        }
+    },
+    "Yinbi0": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    38,
+                    170,
+                    110,
+                    31
+                ],
+                "expected": [
+                    "活动开放中"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "Yinbi1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2907,
+                "y": 1474
+            }
+        }
+    },
+    "Yinbi1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    299,
+                    116,
+                    122,
+                    38
+                ],
+                "expected": [
+                    "目前活动"
+                ]
+            }
+        },
+        "pre_delay": 500,
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "Yinbi2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3237,
+                "y": 1468
+            }
+        }
+    },
+    "Yinbi2": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    486,
+                    465,
+                    146,
+                    31
+                ],
+                "expected": [
+                    "normal quest"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    96,
+                    674,
+                    129,
+                    51
+                ]
+            }
+        },
+        "next": [
+            "Yinbi3"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3570,
+                "y": 1480
+            }
+        }
+    },
+    "Yinbi3": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    74,
+                    337,
+                    538,
+                    237
+                ],
+                "template": [
+                    "template_2.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "Yinbi4"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3855,
+                "y": 1486
+            }
+        }
+    },
+    "Yinbi4": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    167,
+                    1095,
+                    106,
+                    50
+                ],
+                "expected": [
+                    "商业贸易"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    198,
+                    1091,
+                    222,
+                    56
+                ]
+            }
+        },
+        "next": [
+            "Yinbi5"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4180,
+                "y": 1507
+            }
+        }
+    },
+    "Yinbi5": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    143,
+                    109,
+                    89,
+                    47
+                ],
+                "expected": [
+                    "贸易"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    529,
+                    1130,
+                    88,
+                    34
+                ]
+            }
+        },
+        "next": [
+            "Yinbi6"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4524,
+                "y": 1563
+            }
+        }
+    },
+    "Yinbi6": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    273,
+                    498,
+                    177,
+                    38
+                ],
+                "expected": [
+                    "自动扫荡设置"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    442,
+                    728,
+                    108,
+                    36
+                ]
+            }
+        },
+        "post_wait_freezes": {
+            "time": 500,
+            "target": [
+                244,
+                1159,
+                242,
+                104
+            ]
+        },
+        "next": [
+            "Yinbi7"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4915,
+                "y": 1590
+            }
+        }
+    },
+    "Yinbi7": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    298,
+                    284,
+                    138,
+                    41
+                ],
+                "expected": [
+                    "扫荡结果"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    148,
+                    57,
+                    33,
+                    35
+                ]
+            }
+        },
+        "repeat": 3,
+        "repeat_delay": 1000,
+        "$__mpe_code": {
+            "position": {
+                "x": 5250,
+                "y": 1611
+            }
+        }
+    }
+}

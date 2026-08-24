@@ -1,0 +1,214 @@
+{
+    "$__mpe_config_Error": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": -1077,
+                "y": 52,
+                "zoom": 0.95
+            },
+            "filename": "Error",
+            "version": "v1.8.0"
+        }
+    },
+    "enterInformention": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    275,
+                    173,
+                    170,
+                    41
+                ],
+                "expected": [
+                    "王城公布栏"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    351,
+                    1145,
+                    16,
+                    21
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1768,
+                "y": 219
+            }
+        }
+    },
+    "entry": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    132,
+                    920,
+                    463,
+                    218
+                ],
+                "expected": [
+                    "TenkafuMA"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    118,
+                    427,
+                    502,
+                    524
+                ]
+            }
+        },
+        "rate_limit": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 2007,
+                "y": 538
+            }
+        }
+    },
+    "information": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    380,
+                    170,
+                    203,
+                    72
+                ],
+                "expected": [
+                    "最新公告"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    360,
+                    1203,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2153,
+                "y": 284
+            }
+        }
+    },
+    "shop": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    325,
+                    117,
+                    71,
+                    35
+                ],
+                "expected": [
+                    "精选"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    19,
+                    59,
+                    61,
+                    29
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2523,
+                "y": 520
+            }
+        }
+    },
+    "day": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    293,
+                    595,
+                    307,
+                    63
+                ],
+                "expected": [
+                    "奖励已送至仓库"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    348,
+                    1193,
+                    238,
+                    40
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2140,
+                "y": 36
+            }
+        }
+    },
+    "internet": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    106,
+                    576,
+                    133,
+                    52
+                ],
+                "expected": [
+                    "网络不稳定"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    315,
+                    705,
+                    92,
+                    35
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2475,
+                "y": 274
+            }
+        }
+    }
+}

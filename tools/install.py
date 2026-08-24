@@ -100,26 +100,38 @@ def install_deps():
 
 
 def install_resource():
-
     configure_ocr_model()
 
+    # 复制完整resource（包含 resource/pipeline 业务流水线）
     shutil.copytree(
-        working_dir / "assets" / "resource",
+        working_dir / "resource",
         install_path / "resource",
         dirs_exist_ok=True,
     )
-    shutil.copy2(
-        working_dir / "assets" / "interface.json",
-        install_path,
+    # 复制Task：入口调度 + preset UI配置
+    shutil.copytree(
+        working_dir / "Task",
+        install_path / "Task",
+        dirs_exist_ok=True,
+    )
+    # 复制通用资源包
+    shutil.copytree(
+        working_dir / "MaaCommonAssets",
+        install_path / "MaaCommonAssets",
+        dirs_exist_ok=True,
     )
 
+    # 复制interface.json并注入版本号
+    shutil.copy2(
+        working_dir / "interface.json",
+        install_path,
+    )
     with open(install_path / "interface.json", "r", encoding="utf-8") as f:
         interface = jsonc.load(f)
-
     interface["version"] = version
-
     with open(install_path / "interface.json", "w", encoding="utf-8") as f:
         jsonc.dump(interface, f, ensure_ascii=False, indent=4)
+
 
 
 def install_chores():

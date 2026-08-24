@@ -1,0 +1,258 @@
+{
+    "$__mpe_config_P1": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": 349,
+                "y": 0,
+                "zoom": 0.53
+            },
+            "filename": "P1",
+            "version": "v1.8.0"
+        }
+    },
+    "Dispatch1": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    29,
+                    611,
+                    30,
+                    39
+                ]
+            }
+        },
+        "next": [
+            "Dh2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 332,
+                "y": 432
+            }
+        }
+    },
+    "Dh2": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    9,
+                    573,
+                    119,
+                    192
+                ],
+                "expected": [
+                    "派遣完成"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "[JumpBack]Dh3-4",
+            "[JumpBack]Dh-3-4",
+            "DhFend"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 652,
+                "y": 400
+            }
+        }
+    },
+    "Dh4": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    283,
+                    173,
+                    152,
+                    40
+                ],
+                "expected": [
+                    "派遣队归来"
+                ]
+            }
+        },
+        "pre_wait_freezes": {
+            "time": 500,
+            "target": [
+                222,
+                1025,
+                280,
+                233
+            ]
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    316,
+                    1049,
+                    80,
+                    26
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1612,
+                "y": 328
+            }
+        }
+    },
+    "DH-3": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    159,
+                    895,
+                    113,
+                    313
+                ],
+                "expected": [
+                    "闲置中"
+                ]
+            }
+        },
+        "pre_wait_freezes": {
+            "time": 3500,
+            "target": [
+                107,
+                918,
+                506,
+                161
+            ]
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    308,
+                    1129,
+                    106,
+                    59
+                ]
+            }
+        },
+        "post_wait_freezes": {
+            "time": 500,
+            "target": [
+                266,
+                1163,
+                190,
+                113
+            ]
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1292,
+                "y": 808
+            }
+        }
+    },
+    "Dh3": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    138,
+                    854,
+                    289,
+                    387
+                ],
+                "expected": [
+                    "派遣完成"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "Dh4"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1292,
+                "y": 341
+            }
+        }
+    },
+    "Dh3-4": {
+        "max_hit": 3,
+        "next": [
+            "Dh3"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 972,
+                "y": 360
+            }
+        }
+    },
+    "Dh-3-4": {
+        "max_hit": 3,
+        "next": [
+            "DH-3"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 972,
+                "y": 856
+            }
+        }
+    },
+    "DhFend": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    23,
+                    58,
+                    60,
+                    28
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 972,
+                "y": 638
+            }
+        }
+    },
+    "DailyStartD": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    37,
+                    173,
+                    115,
+                    32
+                ],
+                "expected": [
+                    "活动开放中"
+                ]
+            }
+        },
+        "next": [
+            "Dispatch1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 12,
+                "y": 415
+            }
+        }
+    }
+}

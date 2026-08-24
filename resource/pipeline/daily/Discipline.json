@@ -1,0 +1,403 @@
+{
+    "$__mpe_config_Discipline": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": -2562,
+                "y": -296,
+                "zoom": 0.93
+            },
+            "filename": "Discipline",
+            "version": "v1.8.1"
+        }
+    },
+    "Discipline0": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    36,
+                    170,
+                    115,
+                    31
+                ],
+                "expected": [
+                    "活动开放中"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    618,
+                    1042,
+                    54,
+                    54
+                ]
+            }
+        },
+        "next": [
+            "Discipline_1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 231,
+                "y": 333
+            }
+        }
+    },
+    "Discipline_7": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    259,
+                    336,
+                    201,
+                    47
+                ],
+                "expected": [
+                    "需完成前一房间调教"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    284,
+                    151,
+                    151,
+                    72
+                ]
+            }
+        },
+        "next": [
+            "Discipline8"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2353,
+                "y": 345
+            }
+        }
+    },
+    "Discipline7": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    252,
+                    329,
+                    218,
+                    62
+                ],
+                "expected": [
+                    "需完成前一房间调教"
+                ]
+            }
+        },
+        "inverse": true,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    297,
+                    329,
+                    191,
+                    66
+                ]
+            }
+        },
+        "next": [
+            "Discipline8"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2357,
+                "y": 594
+            }
+        }
+    },
+    "Discipline8": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    556,
+                    953,
+                    51,
+                    31
+                ],
+                "expected": [
+                    "活动"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    551,
+                    950,
+                    59,
+                    32
+                ]
+            }
+        },
+        "next": [
+            "Discipline9"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2741,
+                "y": 484
+            }
+        }
+    },
+    "Discipline9": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    197,
+                    362,
+                    357,
+                    433
+                ]
+            }
+        },
+        "repeat": 3,
+        "repeat_delay": 500,
+        "next": [
+            "Discipline10"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3126,
+                "y": 529
+            }
+        }
+    },
+    "Discipline10": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    17,
+                    60,
+                    70,
+                    26
+                ]
+            }
+        },
+        "repeat": 2,
+        "repeat_delay": 1000,
+        "$__mpe_code": {
+            "position": {
+                "x": 3486,
+                "y": 590
+            }
+        }
+    },
+    "Discipline_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    11,
+                    54,
+                    105,
+                    42
+                ],
+                "template": [
+                    "template_1.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    488,
+                    665,
+                    76,
+                    28
+                ]
+            }
+        },
+        "next": [
+            "Discipline2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 560,
+                "y": 335
+            }
+        }
+    },
+    "Discipline2": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    309,
+                    603,
+                    67,
+                    31
+                ],
+                "expected": [
+                    "职位"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    683,
+                    949,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "Discipline3"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 795,
+                "y": 338
+            }
+        }
+    },
+    "Discipline3": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    109,
+                    815,
+                    95,
+                    32
+                ],
+                "expected": [
+                    "调教进度"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    491,
+                    817,
+                    61,
+                    35
+                ]
+            }
+        },
+        "repeat": 2,
+        "repeat_delay": 500,
+        "next": [
+            "Discipline4"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1086,
+                "y": 303
+            }
+        }
+    },
+    "Discipline4": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    454,
+                    1076,
+                    77,
+                    23
+                ]
+            }
+        },
+        "next": [
+            "Discipline5",
+            "Discipline_5"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1389,
+                "y": 348
+            }
+        }
+    },
+    "Discipline5": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    602,
+                    662,
+                    30,
+                    28
+                ],
+                "template": [
+                    "template_1787554858157.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "Discipline6"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1612,
+                "y": 87
+            }
+        }
+    },
+    "Discipline_5": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    604,
+                    662,
+                    27,
+                    26
+                ],
+                "template": [
+                    "template_1787557780771.png"
+                ]
+            }
+        },
+        "next": [
+            "Discipline6"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1686,
+                "y": 584
+            }
+        }
+    },
+    "Discipline6": {
+        "next": [
+            "Discipline_7",
+            "Discipline7"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1926,
+                "y": 435
+            }
+        }
+    }
+}
