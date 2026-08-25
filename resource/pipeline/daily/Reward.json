@@ -4,15 +4,615 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -3381,
-                "y": -708,
+                "x": -859,
+                "y": -86,
                 "zoom": 0.59
             },
             "filename": "Reward",
             "version": "v1.8.1"
         }
     },
+    "Reward-6": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    140,
+                    232,
+                    68,
+                    29
+                ],
+                "expected": [
+                    "每日"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    305,
+                    1047,
+                    107,
+                    30
+                ]
+            }
+        },
+        "post_wait_freezes": {
+            "time": 500,
+            "target": [
+                250,
+                1150,
+                221,
+                90
+            ]
+        },
+        "next": [
+            "Reward-7"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1932,
+                "y": 739
+            }
+        }
+    },
+    "Reward-10": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    510,
+                    295,
+                    68,
+                    25
+                ]
+            }
+        },
+        "next": [
+            "Reward-11"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3212,
+                "y": 801
+            }
+        }
+    },
+    "Reward-11": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    271,
+                    462,
+                    84,
+                    29
+                ],
+                "expected": [
+                    "可领取"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    303,
+                    1044,
+                    111,
+                    33
+                ]
+            }
+        },
+        "post_wait_freezes": {
+            "time": 500,
+            "target": [
+                250,
+                1150,
+                221,
+                90
+            ]
+        },
+        "next": [
+            "Reward-12"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3555,
+                "y": 730
+            }
+        }
+    },
+    "Reward-12": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    344,
+                    1175,
+                    29,
+                    25
+                ]
+            }
+        },
+        "repeat": 2,
+        "repeat_delay": 500,
+        "$__mpe_code": {
+            "position": {
+                "x": 4017,
+                "y": 817
+            }
+        }
+    },
     "Reward0": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    41,
+                    169,
+                    107,
+                    33
+                ],
+                "expected": [
+                    "活动开放中"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    445,
+                    1185,
+                    69,
+                    38
+                ]
+            }
+        },
+        "post_wait_freezes": {
+            "time": 1000,
+            "target": [
+                294,
+                1140,
+                123,
+                83
+            ]
+        },
+        "next": [
+            "Reward1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 12,
+                "y": 675
+            }
+        }
+    },
+    "Reward1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    376,
+                    113,
+                    106,
+                    44
+                ],
+                "expected": [
+                    "每日兑换"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    531,
+                    126,
+                    84,
+                    22
+                ]
+            }
+        },
+        "next": [
+            "Reward3"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 332,
+                "y": 705
+            }
+        }
+    },
+    "Reward3": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    482,
+                    193,
+                    108,
+                    32
+                ],
+                "expected": [
+                    "巴尔商行"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    490,
+                    193,
+                    103,
+                    30
+                ]
+            }
+        },
+        "next": [
+            "Reward4"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 652,
+                "y": 705
+            }
+        }
+    },
+    "Reward4": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    123,
+                    569,
+                    82,
+                    34
+                ],
+                "expected": [
+                    "召唤契约"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    697,
+                    754,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "[JumpBack]Reward _5",
+            "[JumpBack]Reward5",
+            "CloseShop"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 972,
+                "y": 695
+            }
+        }
+    },
+    "Reward _5": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    64,
+                    553,
+                    587,
+                    526
+                ],
+                "template": [
+                    "template_3.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "Reward6"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1292,
+                "y": 407
+            }
+        }
+    },
+    "Reward5": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    64,
+                    553,
+                    587,
+                    526
+                ],
+                "template": [
+                    "template_4.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "Reward6"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1292,
+                "y": 12
+            }
+        }
+    },
+    "Reward7": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    258,
+                    776,
+                    219,
+                    160
+                ],
+                "expected": [
+                    "购买"
+                ]
+            }
+        },
+        "next": [
+            "Reward8"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1932,
+                "y": 441
+            }
+        }
+    },
+    "Reward10": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    102,
+                    1054,
+                    526,
+                    93
+                ]
+            }
+        },
+        "anchor": "",
+        "repeat": 2,
+        "repeat_delay": 500,
+        "$__mpe_code": {
+            "position": {
+                "x": 2892,
+                "y": 413
+            }
+        }
+    },
+    "Reward8": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    330,
+                    734,
+                    55,
+                    26
+                ]
+            }
+        },
+        "next": [
+            "Reward9"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2252,
+                "y": 458
+            }
+        }
+    },
+    "Reward9": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    258,
+                    776,
+                    219,
+                    160
+                ],
+                "expected": [
+                    "购买"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": {
+            "time": 500,
+            "target": [
+                249,
+                1013,
+                256,
+                261
+            ]
+        },
+        "next": [
+            "Reward10"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2572,
+                "y": 412
+            }
+        }
+    },
+    "Reward_7": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    258,
+                    776,
+                    219,
+                    160
+                ],
+                "expected": [
+                    "购买"
+                ]
+            }
+        },
+        "inverse": true,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    348,
+                    912,
+                    25,
+                    26
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1932,
+                "y": 99
+            }
+        }
+    },
+    "Reward6": {
+        "post_delay": 500,
+        "next": [
+            "Reward7",
+            "Reward_7"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1612,
+                "y": 412
+            }
+        }
+    },
+    "CloseShop": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    92,
+                    1181,
+                    77,
+                    43
+                ]
+            }
+        },
+        "next": [
+            "Reward-5"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1292,
+                "y": 801
+            }
+        }
+    },
+    "Reward-7": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    287,
+                    1051,
+                    142,
+                    28
+                ]
+            }
+        },
+        "repeat": 2,
+        "repeat_delay": 500,
+        "next": [
+            "Reward-8"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2252,
+                "y": 755
+            }
+        }
+    },
+    "Reward-8": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    305,
+                    1047,
+                    107,
+                    30
+                ]
+            }
+        },
+        "post_wait_freezes": {
+            "time": 500,
+            "target": [
+                250,
+                1150,
+                221,
+                90
+            ]
+        },
+        "next": [
+            "Reward-9"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2583,
+                "y": 810
+            }
+        }
+    },
+    "Reward-9": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    287,
+                    1051,
+                    142,
+                    28
+                ]
+            }
+        },
+        "repeat": 2,
+        "repeat_delay": 500,
+        "next": [
+            "Reward-10"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2851,
+                "y": 786
+            }
+        }
+    },
+    "Reward-5": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -31,15 +631,15 @@
             "type": "Click",
             "param": {
                 "target": [
-                    439,
-                    1186,
-                    83,
-                    38
+                    635,
+                    74,
+                    33,
+                    28
                 ]
             }
         },
         "post_wait_freezes": {
-            "time": 200,
+            "time": 500,
             "target": [
                 262,
                 1149,
@@ -48,415 +648,12 @@
             ]
         },
         "next": [
-            "Reward1"
+            "Reward-6"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 5067,
-                "y": 1593
-            }
-        }
-    },
-    "Reward9": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    324,
-                    165,
-                    68,
-                    37
-                ],
-                "expected": [
-                    "任务"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    303,
-                    1046,
-                    106,
-                    32
-                ]
-            }
-        },
-        "repeat": 5,
-        "repeat_delay": 500,
-        "post_wait_freezes": {
-            "time": 500,
-            "target": [
-                176,
-                968,
-                369,
-                276
-            ]
-        },
-        "next": [
-            "Reward10"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 8222,
-                "y": 1727
-            }
-        }
-    },
-    "Reward1": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    380,
-                    113,
-                    106,
-                    41
-                ],
-                "expected": [
-                    "每日兑换"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    539,
-                    129,
-                    70,
-                    22
-                ]
-            }
-        },
-        "next": [
-            "Reward2"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 5475,
-                "y": 1630
-            }
-        }
-    },
-    "Reward2": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    132,
-                    195,
-                    96,
-                    29
-                ],
-                "expected": [
-                    "记忆精粹"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    487,
-                    192,
-                    102,
-                    35
-                ]
-            }
-        },
-        "next": [
-            "Reward3"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 5784,
-                "y": 1640
-            }
-        }
-    },
-    "Reward3": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    118,
-                    567,
-                    99,
-                    37
-                ],
-                "expected": [
-                    "召唤契约"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    695,
-                    766
-                ]
-            }
-        },
-        "next": [
-            "Reward4"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 6092,
-                "y": 1668
-            }
-        }
-    },
-    "Reward4": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    35,
-                    482,
-                    622,
-                    545
-                ],
-                "template": [
-                    "template_3.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "[JumpBack]Reward5",
-            "Reward_5"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 6451,
-                "y": 1680
-            }
-        }
-    },
-    "Reward5": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    323,
-                    803,
-                    77,
-                    32
-                ]
-            }
-        },
-        "post_wait_freezes": {
-            "time": 200,
-            "target": [
-                265,
-                1149,
-                171,
-                81
-            ]
-        },
-        "next": [
-            "Reward6"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 6844,
-                "y": 1492
-            }
-        }
-    },
-    "Reward6": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    326,
-                    729,
-                    72,
-                    27
-                ]
-            }
-        },
-        "next": [
-            "Reward7"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 7218,
-                "y": 1730
-            }
-        }
-    },
-    "Reward_5": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    51,
-                    541,
-                    584,
-                    498
-                ],
-                "template": [
-                    "template_4.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    316,
-                    846,
-                    81,
-                    36
-                ]
-            }
-        },
-        "next": [
-            "Reward6"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 6848,
-                "y": 1824
-            }
-        }
-    },
-    "Reward7": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    98,
-                    1189,
-                    78,
-                    36
-                ]
-            }
-        },
-        "next": [
-            "Reward8"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 7544,
-                "y": 1738
-            }
-        }
-    },
-    "Reward8": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    40,
-                    173,
-                    106,
-                    27
-                ],
-                "expected": [
-                    "活动开放中"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    638,
-                    73,
-                    32,
-                    28
-                ]
-            }
-        },
-        "next": [
-            "Reward9"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 7910,
-                "y": 1738
-            }
-        }
-    },
-    "Reward10": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    501,
-                    294,
-                    81,
-                    29
-                ]
-            }
-        },
-        "next": [
-            "Reward11"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 8527,
-                "y": 1805
-            }
-        }
-    },
-    "Reward11": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    281,
-                    1045,
-                    150,
-                    36
-                ]
-            }
-        },
-        "repeat": 4,
-        "repeat_delay": 500,
-        "post_wait_freezes": {
-            "time": 500,
-            "target": [
-                239,
-                1045,
-                277,
-                220
-            ]
-        },
-        "next": [
-            "Reward12"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 8832,
-                "y": 1824
-            }
-        }
-    },
-    "Reward12": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    348,
-                    1173,
-                    23,
-                    26
-                ]
-            }
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 9204,
-                "y": 1884
+                "x": 1612,
+                "y": 739
             }
         }
     }

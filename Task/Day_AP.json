@@ -7,7 +7,7 @@
         },
         {
             "name": "领取每日体力",
-            "entry": "DailyStartE",
+            "entry": "DailyStart0",
             "group": [
                 "daily"
             ]
@@ -21,7 +21,7 @@
         },
         {
             "name": "每日派遣",
-            "entry": "DailyStartD",
+            "entry": "Dispatch0",
             "group": [
                 "daily"
             ]

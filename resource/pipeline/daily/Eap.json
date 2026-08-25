@@ -1,49 +1,61 @@
 {
-    "$__mpe_config_P1": {
+    "$__mpe_config_Eap": {
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1787666248643,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "D:\\UserDate\\Desktop\\TKFM\\resource\\pipeline\\daily\\Eap.json",
             "savedViewport": {
-                "x": 349,
-                "y": 0,
-                "zoom": 0.53
+                "x": 874,
+                "y": 338,
+                "zoom": 0.62
             },
-            "filename": "P1",
-            "version": "v1.8.0"
+            "filename": "Reward",
+            "version": "v1.8.1"
         }
     },
-    "ENAP-1": {
-        "action": {
-            "type": "Click",
+    "DailyStart0": {
+        "recognition": {
+            "type": "OCR",
             "param": {
-                "target": [
-                    31,
-                    73,
-                    123,
-                    53
+                "roi": [
+                    38,
+                    169,
+                    116,
+                    33
+                ],
+                "expected": [
+                    "活动开放中"
                 ]
             }
         },
-        "post_wait_freezes": {
-            "time": 500,
-            "target": [
-                232,
-                1112,
-                275,
-                158
-            ]
-        },
         "next": [
-            "E2"
+            "ENAP-1"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 332,
-                "y": 44
+                "x": 12,
+                "y": 57
             }
         }
     },
     "E2": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    303,
+                    204,
+                    112,
+                    33
+                ],
+                "expected": [
+                    "好友清单"
+                ]
+            }
+        },
         "action": {
             "type": "Click",
             "param": {
@@ -56,7 +68,7 @@
             }
         },
         "post_wait_freezes": {
-            "time": 500,
+            "time": 1000,
             "target": [
                 230,
                 1151,
@@ -101,7 +113,7 @@
             }
         },
         "post_wait_freezes": {
-            "time": 500,
+            "time": 1000,
             "target": [
                 225,
                 1104,
@@ -138,28 +150,34 @@
             }
         }
     },
-    "DailyStartE": {
-        "recognition": {
-            "type": "OCR",
+    "ENAP-1": {
+        "action": {
+            "type": "Click",
             "param": {
-                "roi": [
-                    38,
-                    169,
-                    116,
-                    33
-                ],
-                "expected": [
-                    "活动开放中"
+                "target": [
+                    31,
+                    73,
+                    123,
+                    53
                 ]
             }
         },
+        "post_wait_freezes": {
+            "time": 1000,
+            "target": [
+                232,
+                1112,
+                275,
+                158
+            ]
+        },
         "next": [
-            "ENAP-1"
+            "E2"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 12,
-                "y": 57
+                "x": 332,
+                "y": 44
             }
         }
     }
