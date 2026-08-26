@@ -126,6 +126,14 @@ def install_resource():
         working_dir / "interface.json",
         install_path,
     )
+    
+    # 复制自定义图标
+    if (working_dir / "logo.ico").exists():
+        shutil.copy2(
+            working_dir / "logo.ico",
+            install_path,
+        )
+        
     with open(install_path / "interface.json", "r", encoding="utf-8") as f:
         interface = jsonc.load(f)
     interface["version"] = version

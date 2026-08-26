@@ -1,0 +1,285 @@
+{
+    "$__mpe_config_Recruit": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": 291,
+                "y": 113,
+                "zoom": 0.43
+            },
+            "filename": "Recruit",
+            "version": "v1.9.0"
+        }
+    },
+    "TkfmRecruit_RecognizeTags-1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "template_8.png"
+                ]
+            }
+        },
+        "inverse": true,
+        "next": [
+            "TkfmRecruit_RecognizeTags4"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 652,
+                "y": 23
+            }
+        }
+    },
+    "TkfmRecruit_RecognizeTagsx": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    427,
+                    273,
+                    178,
+                    719
+                ],
+                "expected": [
+                    "紧急征召"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "TkfmRecruit_RecognizeTagsx1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 737,
+                "y": 827
+            }
+        }
+    },
+    "TkfmRecruit_RecognizeTagsx1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    323,
+                    443,
+                    78,
+                    46
+                ],
+                "expected": [
+                    "确认"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    442,
+                    768,
+                    114,
+                    33
+                ]
+            }
+        },
+        "post_delay": 2000,
+        "next": [
+            "TkfmRecruit_RecognizeTagsx",
+            "TkfmRecruit_RecognizeTags1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 298,
+                "y": 1032
+            }
+        }
+    },
+    "TkfmRecruit_RecognizeTags": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    342,
+                    1143,
+                    144,
+                    42
+                ],
+                "expected": [
+                    "全境征才"
+                ]
+            }
+        },
+        "next": [
+            "TkfmRecruit_RecognizeTags1",
+            "TkfmRecruit_RecognizeTagsx",
+            "TkfmRecruit_RecognizeTags-1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 12,
+                "y": 42
+            }
+        }
+    },
+    "TkfmRecruit_RecognizeTags1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    85,
+                    171,
+                    561,
+                    831
+                ],
+                "template": [
+                    "template_8.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    309,
+                    1031,
+                    99,
+                    31
+                ]
+            }
+        },
+        "next": [
+            "TkfmRecruit_RecognizeTags2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 164,
+                "y": 452
+            }
+        }
+    },
+    "TkfmRecruit_RecognizeTags2": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    536,
+                    55,
+                    94,
+                    43
+                ],
+                "expected": [
+                    "SKIP"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    547,
+                    63,
+                    75,
+                    30
+                ]
+            }
+        },
+        "next": [
+            "TkfmRecruit_RecognizeTags3"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 652,
+                "y": 382
+            }
+        }
+    },
+    "TkfmRecruit_RecognizeTags3": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    304,
+                    1177,
+                    111,
+                    46
+                ],
+                "expected": [
+                    "关闭"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    330,
+                    1189,
+                    77,
+                    23
+                ]
+            }
+        },
+        "next": [
+            "TkfmRecruit_RecognizeTags4"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 972,
+                "y": 382
+            }
+        }
+    },
+    "TkfmRecruit_RecognizeTags4": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "template_7.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "TkfmRecruit_RecognizeTags5"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1245,
+                "y": 411
+            }
+        }
+    },
+    "TkfmRecruit_RecognizeTags5": {
+        "recognition": {
+            "type": "Custom",
+            "param": {
+                "custom_recognition": "tkfm_recruit_tag_reco"
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "tkfm_recruit_select_tags"
+            }
+        },
+        "post_wait_freezes": {
+            "time": 100
+        },
+        "next": [
+            "TkfmRecruit_RecognizeTags4",
+            "TkfmRecruit_RecognizeTagsx"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1612,
+                "y": 328
+            }
+        }
+    }
+}

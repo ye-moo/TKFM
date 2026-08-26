@@ -58,7 +58,8 @@
         }
     ],
     "import": [
-        "Task/preset/daily",
-        "Task/Day_AP.json"
+        "Task/preset/daily.json",
+        "Task/Day_AP.json",
+        "Task/Recruit.json"
     ]
 }

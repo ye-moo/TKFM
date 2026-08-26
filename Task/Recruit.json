@@ -1,0 +1,42 @@
+{
+    "task": [
+        {
+            "name": "全境征才",
+            "entry": "TkfmRecruit_RecognizeTags",
+            "group": "standalone",
+            "option": [
+                "紧急征召"
+            ]
+        }
+    ],
+    "option": {
+        "紧急征召": {
+            "type": "switch",
+            "label": "是否使用紧急招募",
+            "cases": [
+                {
+                    "name": "Yes",
+                    "pipeline_override": {
+                        "TkfmRecruit_RecognizeTagsx": {
+                            "enabled": true
+                        },
+                        "TkfmRecruit_RecognizeTagsx1": {
+                            "enabled": true
+                        }
+                    }
+                },
+                {
+                    "name": "No",
+                    "pipeline_override": {
+                        "TkfmRecruit_RecognizeTagsx": {
+                            "enabled": false
+                        },
+                        "TkfmRecruit_RecognizeTagsx1": {
+                            "enabled": false
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

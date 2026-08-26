@@ -29,7 +29,9 @@
         {
             "name": "调教(按调教值倒序调教3次)",
             "entry": "Discipline0",
-            "group": "daily"
+            "group": [
+                "daily"
+            ]
         },
         {
             "name": "强化角色2次(R N卡按等级倒序升两次)",
@@ -41,7 +43,9 @@
         {
             "name": "领每日奖励",
             "entry": "Reward0",
-            "group": "daily"
+            "group": [
+                "daily"
+            ]
         }
     ]
 }
